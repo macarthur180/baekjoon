@@ -8,7 +8,7 @@ int main() {
 
 
 
-	int total = int (h * 60) + int (m + time);
+	int total =  (h * 60) + (m + time);
 
 
 	int h2 = (total / 60);
