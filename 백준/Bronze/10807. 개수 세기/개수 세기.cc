@@ -1,24 +1,29 @@
-#include <iostream>
-
-using namespace std;
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
 
 int main() {
-  int n;
-  int arr[101];
-  int v;
+	int a[100];
+	int n, num;
 
-  cin >> n;
+	scanf("%d", &n);
 
-  for(int i = 0; i < n; i++) {
-    cin >> arr[i];
-  }
-  cin >> v;
+	for (int i = 0; i < n; i++)
+	{
+		scanf("%d", &num);
+		a[i] = num;
+	}
 
-  int res = 0; 
-  for(int i = 0; i < n; i++) {
-    if(arr[i] == v) 
-      res++;
-  }
+	int v;
+	int count = 0;
+	scanf("%d", &v);
 
-  cout << res;
+	for (int i = 0; i < n; i++)
+	{
+		if (a[i] == v)
+		{
+			count++;
+		}
+	}
+	printf("%d", count);
+
 }
